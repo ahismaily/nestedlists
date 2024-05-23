@@ -1,13 +1,10 @@
-fruits = ["apples","bananas"]
-liquid = ["milk","water"]
-basket = [fruits,liquid]
+basket = [["apples","bananas"],["milk","water"]]
 print(basket)
 print("press Enter to change the content...\n")
-fruits.insert(0,"oranges")
-fruits.append("kiwis")
-liquid.insert(0,"coffee")
-liquid.remove("water")
-liquid.append("tea")
-number = [1,2,3]
-basket.append(number)
+basket[0].insert(0,"oranges")
+basket[0].append("kiwis")
+basket[1].insert(0,"coffee")
+basket[1].remove("water")
+basket[1].append("tea")
+basket.append([1,2,3])
 print (basket)
